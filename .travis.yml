@@ -1,0 +1,3 @@
+dist: xenial
+services: docker
+script: docker build -t bit2shift/r3v-toolchain-gcc .
