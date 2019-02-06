@@ -1,4 +1,4 @@
 dist: xenial
-sudo: required
 services: docker
+language: minimal
 script: docker build -t bit2shift/r3v-toolchain-gcc .
