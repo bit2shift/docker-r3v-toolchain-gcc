@@ -3,5 +3,5 @@ services: docker
 language: minimal
 script:
 - docker build -t bit2shift/r3v-toolchain-gcc .
-- docker save -o r3v-toolchain-gcc.tar bit2shift/r3v-toolchain-gcc
+- docker save -o r3v-toolchain-gcc.txz bit2shift/r3v-toolchain-gcc
 - ls -lha
