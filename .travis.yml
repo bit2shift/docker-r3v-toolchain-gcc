@@ -1,6 +1,6 @@
 dist: xenial
 services: docker
 language: minimal
-script: docker build -t bit2shift/r3v-toolchain-gcc .
-
-after_script: ls -lha
+script:
+- docker build -t bit2shift/r3v-toolchain-gcc .
+- ls -lha
