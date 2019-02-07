@@ -9,5 +9,5 @@ RUN apt-get update
 RUN apt-get install -y g++-8
 RUN apt-get clean
 
-COPY ./entrypoint /
-ENTRYPOINT ["/entrypoint"]
+# COPY ./entrypoint /
+# ENTRYPOINT ["/entrypoint"]
