@@ -4,4 +4,10 @@ language: minimal
 script:
 - docker build -t bit2shift/r3v-toolchain-gcc .
 - docker save bit2shift/r3v-toolchain-gcc | xz -9e > r3v-toolchain-gcc.txz
-- ls -lha
+deploy:
+ provider: releases
+ api_key: "not yet"
+ file: r3v-toolchain-gcc.txz
+ skip_cleanup: true
+ on:
+  tags: true
