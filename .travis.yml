@@ -2,8 +2,8 @@ dist: xenial
 services: docker
 language: minimal
 script:
-- docker build -t bit2shift/r3v-toolchain-gcc .
-- docker save bit2shift/r3v-toolchain-gcc | xz -9ev > r3v-toolchain-gcc.txz
+- docker build -t r3v-toolchain-gcc .
+- docker save r3v-toolchain-gcc | xz -9ev > r3v-toolchain-gcc.txz
 deploy:
  provider: releases
  api_key:
